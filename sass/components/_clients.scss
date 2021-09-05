@@ -12,8 +12,10 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
   @media screen and(min-width: 1199px) {
     flex-wrap: nowrap;
+    
   }
 }
 .clients__item {

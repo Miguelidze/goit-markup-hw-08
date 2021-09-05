@@ -19,6 +19,8 @@
 }
 .container-item {
   text-align: center;
+  align-items: center;
+
   @media screen and(max-width:767px) {
     margin-bottom: 60px;
   }
@@ -28,7 +30,10 @@
     margin-bottom: 60px;
   }
 
-  align-items: center;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+    text-align: left;
+  }
 }
 
 .logo-footer__accent {
@@ -66,8 +71,11 @@
 }
 .join {
   text-align: center;
-  // margin-left: 70px;
   margin-bottom: 60px;
+
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+  }
 }
 .join__title,
 .subscribe__title {

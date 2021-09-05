@@ -11,12 +11,12 @@
   @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
   }
   @media screen and(min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    padding-left: unset;
+    margin: -15px;
   }
 }
 
@@ -29,7 +29,6 @@
 }
 
 .team__item {
-  margin-bottom: 30px;
   background-color: $white-color;
   width: 100%;  
   text-align: center;
@@ -40,6 +39,12 @@
   @media screen and(min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
     margin: 15px;
+  }
+}
+
+.team__list .team__item:not(:last-child) {
+  @media screen and(max-width: 767px) {
+  margin-bottom: 30px;
   }
 }
 
