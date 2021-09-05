@@ -1,0 +1,23 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:active {
+  color: var(--link-text-color);
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.list {
+  list-style: none;
+}
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: unset;
+  padding: unset;
+}

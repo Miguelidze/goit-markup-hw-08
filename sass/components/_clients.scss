@@ -1,0 +1,70 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.title::after {
+  width: 170px;
+  height: 93px;
+  border: 1px solid#AFB1B8;
+  background-size: auto;
+  background-position: center;
+}
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and(min-width: 1199px) {
+    flex-wrap: nowrap;
+  }
+}
+.clients__item {
+  @media screen and(max-width: 767px) {
+    display: flex;
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+  }
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-basis: calc(100% / 3 - 30px);
+    margin: 15px;
+  }
+  @media screen and(min-width: 1199px) {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 170px;
+    flex-basis:initial;
+    justify-content: space-between;
+    margin: 15px;
+  }
+  } 
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 5px;
+
+  transition: border-color 250ms $cubic, color 250ms $cubic,
+    fill 250ms $cubic;
+}
+.clients__link:focus,
+.clients__link:hover {
+  border-color: #2196f3;
+  color: #2196f3;
+}
+.clients__svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 106px;
+  height: 60px;
+
+  fill: currentColor;
+}
+.clients__svg:focus,
+.clients__svg:hover {
+  fill: $link-text-color;
+}
